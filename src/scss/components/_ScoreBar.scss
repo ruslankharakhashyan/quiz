@@ -1,0 +1,25 @@
+.score-bar {
+  .score-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  .progress {
+    border: 1px solid black;
+    background: white;
+    height: 1.5rem;
+
+    .min-score {
+      background-color: black;
+    }
+
+    .current-score {
+      background-color: #717171;
+    }
+
+    .max-score {
+      background-color: #d2d2d2;
+    }
+  }
+}

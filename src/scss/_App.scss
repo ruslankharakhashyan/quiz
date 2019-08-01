@@ -1,0 +1,108 @@
+.quiz-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .quiz-panel {
+    margin: 30px;
+    border: 5px solid #ededed;
+    width: 700px;
+    max-width: 100%;
+    
+    .progress-quiz {
+      background-color: white;
+
+      .progress-bar {
+        background-color: #a9a9a9;
+      }
+    }
+
+    .main {
+      padding: 40px 80px 25px 80px;
+      min-height: 800px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .quiz-title {
+        color: #494949;
+      }
+
+      .category {
+        margin-bottom: 0;
+        color: #8b8b8b;
+      }
+
+      .question {
+        font-size: 1.3em;
+        line-height: 1.3;
+        font-weight: 400;
+        margin: 30px 0;
+      }
+
+      .answer-container {
+        padding: 0;
+
+        button {
+          width: 100%;
+          margin-bottom: 40px;
+          border-color: black;
+          color: black;
+          background-color: #e5e6e5;
+
+          &:hover {
+            background-color: white;
+          }
+        }
+
+        &.answered {
+          button {
+            opacity: 1;
+            color: #a3a3a3;
+            border-color: #a3a3a3;
+            background-color: #f5f5f5;
+
+            &.answer {
+              background-color: white;
+              color: black;
+              border-color: black;
+            }
+
+            &.correct-answer {
+              background-color: black;
+              color: white;
+              border-color: black;
+            }
+          }
+        }
+      }
+
+      .evaluation {
+        text-align: center;
+        margin: 30px auto;
+
+        .title {
+          color: black;
+          font-weight: 400;
+        }
+
+        button {
+          margin-top: 10px;
+          min-width: 180px;
+          color: black;
+          border: 1px solid black;
+          background-color: #e5e6e5;
+          
+          &:hover {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
