@@ -90,7 +90,7 @@ class Quiz extends Component {
             <h1 className="quiz-title">{ `Question ${currentIndex + 1} of ${data.length}` }</h1>
             <p className="category">{decodeURIComponent(data[currentIndex].category)}</p>
             <ReactStars count={5} size={24} color2={'#000000'} color1={'#cbcccb'} value={difficulty} edit={false} />
-            <h2 className="question">{ decodeURIComponent(data[15].question) }</h2>
+            <h2 className="question">{ decodeURIComponent(data[currentIndex].question) }</h2>
             <Container className={`answer-container ${answer !== '' && 'answered'}`}>
               <Row>
                 {
